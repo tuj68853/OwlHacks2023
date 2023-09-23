@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="OwlHacks2023.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Welcome to PARC!</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav>
+            
+            <div class="logo-container">
+                <img src="PARC%20Logo%201.png" alt="PARC Logo" />
+            </div>
+            <div>
+                <asp:HyperLink ID="HomeLink" runat="server" NavigateUrl="~/Home.aspx" Text="Home" CssClass="nav-link" />
+                <asp:HyperLink ID="SearchLink" runat="server" NavigateUrl="~/Search.aspx" Text="Search" CssClass="nav-link" />
+                <asp:HyperLink ID="ServicesLink" runat="server" NavigateUrl="~/Services.aspx" Text="Services" CssClass="nav-link" />
+                <asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx" Text="Contact" CssClass="nav-link" />
+            </div>
+            <div style="float: right">
+                <asp:Button ID="btnSignIn" runat="server" Text="Sign In" CssClass="nav-buttons" />
+                <br />
+                <asp:Button ID="btnCreateAccount" runat="server" Text="Create Account" CssClass="nav-buttons" />
+            </div>
+
+        </nav>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
