@@ -7,7 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <style>
-        /* Apply styles to stretch the image */
+        
         body, html {
             margin: 0;
             padding: 0;

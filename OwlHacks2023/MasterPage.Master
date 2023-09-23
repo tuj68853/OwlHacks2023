@@ -19,7 +19,7 @@
             <div>
                 <asp:HyperLink ID="HomeLink" runat="server" NavigateUrl="~/Home.aspx" Text="Home" CssClass="nav-link" />
                 <asp:HyperLink ID="SearchLink" runat="server" NavigateUrl="~/Search.aspx" Text="Search" CssClass="nav-link" />
-                <asp:HyperLink ID="ServicesLink" runat="server" NavigateUrl="~/Services.aspx" Text="Services" CssClass="nav-link" />
+                <asp:HyperLink ID="MockupsLink" runat="server" NavigateUrl="~/MockUps.aspx" Text="Mock Ups" CssClass="nav-link" />
                 <asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx" Text="Contact" CssClass="nav-link" />
             </div>
             <div style="float: right">
@@ -32,6 +32,8 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
         </asp:ContentPlaceHolder>
     </form>
 </body>
